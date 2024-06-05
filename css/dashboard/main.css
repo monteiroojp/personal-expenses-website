@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #ecf0f1;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+main > section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section > h2{
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100vw;
+    overflow-x: hidden;
+
+    padding: 1.5rem 1.0rem;
+    margin-bottom: 50px;
+    
+    background-color: #3498db;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.288), 3, 3;
+}
+
+header > section > nav > ul > li{
+    display: inline;
+    margin: 0px 10px;
+}
+
+header > section > nav > ul > li > a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+}
+
+header > section > nav > ul > li > a:hover{
+    border-bottom: 1px solid white;
+    transition: 3 ease;
+}
+
+/*Main basics*/
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Section graph per category*/
+#totalPerCategory{
+    margin-bottom: 50px;
+}
+
+#totalPerCategory > h1{
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+
+/*Section newest expenses*/
+.expense-card{
+    display: flex;
+    flex-direction: column;
+
+    width: 40vw;
+    padding: 0.5rem;
+    margin-bottom: 30px;
+
+    background-color: #4aacee;
+    box-shadow: 10px 7px 20px rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.089);
+    border-radius: 10px;
+}
+
+.expense-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.expense-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.expense-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expense-title{
+    justify-self: center;
+}
+
+
+
+.expense-amount{
+    color: rgb(28, 145, 28);
+}
